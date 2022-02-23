@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.conf-container{
+    margin: 0 auto;
+}
+
+.table-container{
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
+    border-collapse: collapse; /*Para que se acoplen todas las lineas.*/
+}
+
+.table-container tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-container td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 20px;
+    height: 20px;
+}
+
+.color{
+    border: 1px solid black;
+}
+
+.color-container{
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    border-collapse: collapse;
+    grid-template-rows: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.red{
+    background-color: rgb(221, 45, 45);
+}
+
+.green{
+    background-color: rgb(131, 240, 131);
+}
+
+.purple{
+    background-color: rgb(235, 107, 235);
+}
+
+.yellow{
+    background-color: rgb(247, 247, 113);
+}
+
+.blue-light{
+    background-color: rgb(112, 240, 240);
+}
+
+.orange{
+    background-color: rgb(248, 145, 107);
+}
+
+.lastId{
+    background-color: brown;
+}
+
+#reset-btn{
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
