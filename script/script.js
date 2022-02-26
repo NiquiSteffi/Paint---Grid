@@ -47,6 +47,7 @@ const paintSquareOnMove = (event) => {
 }
 gridSquares.forEach((square) => square.addEventListener("mousemove", paintSquareOnMove));
 
+
 //Resetear grilla.
 const resetGrid = () => {
     gridSquares.forEach((square) => square.className = "painterBlock");
