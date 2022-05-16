@@ -1,6 +1,6 @@
 //Creación del grid.
-rows = 13;
-colums = 13;
+rows = 15;
+colums = 30;
 
 const tableContainer = document.querySelector(".table-container");
 
@@ -24,8 +24,8 @@ for (let i = 0; i < rows; i++){
 let nameColor;
 const colorSelected = (event) => {
   nameColor = event.target.id;
-  const strongTarget = document.querySelector("#selected-color");
-  strongTarget.textContent = nameColor;
+  const strongTarget = document.querySelector(".selected-color");
+  strongTarget.textContent = nameColor.toUpperCase();
 }
 const colorSquares = document.querySelectorAll(".color");
 colorSquares.forEach((square) => square.addEventListener("click", colorSelected));
@@ -51,7 +51,7 @@ gridSquares.forEach((square) => square.addEventListener("mousemove", paintSquare
 //Resetear grilla.
 const resetGrid = () => {
     gridSquares.forEach((square) => square.className = "painterBlock");
-    const strongTarget = document.querySelector("#selected-color");
+    const strongTarget = document.querySelector(".selected-color");
     nameColor = null;
     strongTarget.textContent = "";
 }

@@ -5,30 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
     <title>PAINT GRID - PAGE</title>
 </head>
 <body>
-    
-    <h1>PAINT GRID</h1>
     <div class="container">
-        <div class="conf-container">
-            <h3>El color seleccionado es <strong id="selected-color"></strong></h3>
-            <div class="color-container">
-                <div class="color red" id="red"></div>
-                <div class="color orange" id="orange"></div>
-                <div class="color purple" id="purple"></div>
-                <div class="color green" id="green"></div>
-                <div class="color blue-light" id="blue-light"></div>
-                <div class="color yellow" id="yellow"></div>
+        <h1>PAINT GRID</h1>
+        <div class="container-grid">
+            <div class="conf-container">
+                <h3>El color seleccionado es <strong class="selected-color"></strong></h3>
+                <div class="color-container">
+                    <div class="color red" id="red"></div>
+                    <div class="color orange" id="orange"></div>
+                    <div class="color purple" id="purple"></div>
+                    <div class="color green" id="green"></div>
+                    <div class="color blue-light" id="blue-light"></div>
+                    <div class="color yellow" id="yellow"></div>
+                </div>
+                <table class="table-container"></table>
             </div>
-            <table class="table-container"></table>
+            <button id="reset-btn">Reset</button>
         </div>
-        <button id="reset-btn">Reset</button>
     </div>
-    
-
-
-
     <script src="./script/script.js"></script>
 </body>
 </html>
